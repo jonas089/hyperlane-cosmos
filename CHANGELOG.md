@@ -6,7 +6,7 @@
 "Bug Fixes" for any bug fixes.
 "Client Breaking" for breaking CLI commands and REST routes used by end-users.
 "API Breaking" for breaking exported APIs used by developers building on SDK.
-"State Machine Breaking" for any changes that result in a different AppState given same genesisState and txList.
+"State Machine Breaking" for any changes that result in a different AppState given the same genesisState and txList.
 
 -->
 
@@ -14,20 +14,33 @@
 
 An '!' indicates a state machine breaking change.
 
-## Unreleased
+## [v1.2.0-rc.0](https://github.com/bcp-innovations/hyperlane-cosmos/releases/tag/v1.2.0-rc.0) - 2026-02-13
 
 ### Features
 
+- ! [#154](https://github.com/bcp-innovations/hyperlane-cosmos/pull/154) Charge gas for signature verification.
 - ! [#135](https://github.com/bcp-innovations/hyperlane-cosmos/pull/135) Allow authority to create native synthetic tokens.
 
 ### Bug Fixes
 
+- ! [#164](https://github.com/bcp-innovations/hyperlane-cosmos/pull/164) Fix MsgPayForGas to account for the IGP quote.
+- ! [#163](https://github.com/bcp-innovations/hyperlane-cosmos/pull/163) Fix warp payload length check.
 - ! [#148](https://github.com/bcp-innovations/hyperlane-cosmos/pull/148) Fix Amino name typos in warp.
 - ! [#153](https://github.com/bcp-innovations/hyperlane-cosmos/pull/153) Fix SetDomain for RoutingISM.
 - ! [#123](https://github.com/bcp-innovations/hyperlane-cosmos/pull/123) Fix Amino name typos in core.
 - ! [#143](https://github.com/bcp-innovations/hyperlane-cosmos/pull/143) Allow IGP to charge zero fees.
 - ! [#151](https://github.com/bcp-innovations/hyperlane-cosmos/pull/151) Support 32 byte addresses in remote recv collateral.
 - ! [#141](https://github.com/bcp-innovations/hyperlane-cosmos/pull/141) Corrected coin comparison.
+
+### Improvements
+
+- ! [#165](https://github.com/bcp-innovations/hyperlane-cosmos/pull/165) Constrain ReceiverContract to HexAddress type.
+
+## [v1.1.0](https://github.com/bcp-innovations/hyperlane-cosmos/releases/tag/v1.1.0) - 2026-02-11
+
+### Bug Fixes
+
+- ! [#157](https://github.com/bcp-innovations/hyperlane-cosmos/pull/157) Fix Amino JSON signing for `MsgSetRoutingIsmDomain`.
 
 ## [v1.0.1](https://github.com/bcp-innovations/hyperlane-cosmos/releases/tag/v1.0.1) - 2025-06-05
 
